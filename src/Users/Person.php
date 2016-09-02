@@ -1,6 +1,6 @@
 <?php
 
-namespace CanadaDrives;
+namespace CanadaDrives\Users;
 
 class Person{
 

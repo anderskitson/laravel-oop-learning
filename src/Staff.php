@@ -2,6 +2,9 @@
 
 namespace CanadaDrives;
 
+use CanadaDrives\Users\Person;
+
+
 class Staff{
 
     protected $members = [];

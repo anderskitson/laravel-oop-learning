@@ -2,6 +2,8 @@
 
 namespace CanadaDrives;
 
+use CanadaDrives\Users\Person;
+
 class Business{
 
     protected $staff;
