@@ -2,30 +2,15 @@
 
 class Person{
 
-    private $name;
+    public static $age =1;
 
-    private $age;
-
-    Public function __construct($name){
-        $this->name = $name;
+    public function haveBirthday(){
+        static::$age +=1;
     }
 
-    Public function getAge(){
-        return $this->age * 365;
-    }
-
-    Public function setAge($age){
-
-        if ($age < 18){
-            throw new Exception("Person is not old Enough");
-        }
-
-        $this->age = $age;
-    }
 }
 
-$john = new Person('John Doe');
-$john->setAge(30);
-$john->age = 8;
+$joe = new Person;
+$joe->haveBirthday();
 
-var_dump($john->getAge());
+echo Person::$age;
